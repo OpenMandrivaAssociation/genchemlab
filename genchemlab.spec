@@ -30,7 +30,7 @@ point depression, vapor pressure, and spectrophotometry.
 %build
 %configure2_5x
 perl -p -i -e 's/usr\/X11R6\/lib\/qt/usr\/X11R6\/lib/g' program/Makefile
-%make MOC=%_libdir/qt3/bin/moc
+%make
 										
 %install
 rm -rf $RPM_BUILD_ROOT
