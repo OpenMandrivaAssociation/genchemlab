@@ -11,7 +11,6 @@ Source:		http://prdownloads.sourceforge.net/genchemlab/genchemlab-%{version}.tar
 URL:		http://genchemlab.sourceforge.net/
 License:	GPL
 Group:		Sciences/Chemistry
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	qt3-devel
 BuildRequires:  MesaGLU-devel
 BuildRequires:  ImageMagick
