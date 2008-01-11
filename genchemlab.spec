@@ -38,9 +38,15 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="GenChemLab" longtitle="Chemistry Lab Simulations" section="Applications/Sciences/Chemistry"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Icon=%{name}
+Name=GenChemLab
+Comment=Chemistry Lab Simulations
+Categories=Science;Chemistry;
 EOF
 
 #icons
@@ -69,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/*.desktop
 %{_datadir}/%name
 %{_datadir}/pixmaps/*.png
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
