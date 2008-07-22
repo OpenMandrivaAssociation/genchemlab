@@ -12,7 +12,7 @@ URL:		http://genchemlab.sourceforge.net/
 License:	GPL
 Group:		Sciences/Chemistry
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	qt3-devel
+BuildRequires:	qt3-devel qt4-devel
 BuildRequires:  MesaGLU-devel
 BuildRequires:  ImageMagick
 
