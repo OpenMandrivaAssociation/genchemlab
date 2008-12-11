@@ -14,7 +14,7 @@ Group:		Sciences/Chemistry
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	qt3-devel qt4-devel
 BuildRequires:  MesaGLU-devel
-BuildRequires:  ImageMagick
+BuildRequires:  imagemagick
 
 %description
 GenChemLab is an OpenGL-based application intended to simulate several common
