@@ -1,6 +1,6 @@
 %define name	genchemlab
 %define version	1.0
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: 	 	%{name}
 Summary: 	General Chemistry Lab Simulator - "GenChemLab"
