@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		http://prdownloads.sourceforge.net/genchemlab/genchemlab-%{version}.tar.bz2
-URL:		http://genchemlab.sourceforge.net/
+URL:		https://genchemlab.sourceforge.net/
 License:	GPL
 Group:		Sciences/Chemistry
 BuildRoot:	%{_tmppath}/%{name}-buildroot
